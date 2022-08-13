@@ -38,7 +38,7 @@ class Author extends Person {
     }
 
     public function getCompleteName() {
-        return $this->getFullName()." a.k.a. ".$this->penName.PHP_EOL;
+        return $this->getFullName().PHP_EOL;
     }
 
     public static function getCenturyAuthorWasPopular() {
@@ -48,8 +48,8 @@ class Author extends Person {
 
 //Private and protected are modifiers to class properties and methods
 
-echo Author::$centuryPopular; //access static property
-echo Author::getCenturyAuthorWasPopular(); //access static method
+//echo Author::$centuryPopular; access static property
+//echo Author::getCenturyAuthorWasPopular(); access static method
 
 
 //$myObject->setFirstName("Willie");
